@@ -9,7 +9,7 @@ import { track } from '@amplitude/analytics-browser'
 
 export function Hero() {
   return (
-    <div className="relative overflow-hidden bg-white isolate">
+    <div className="relative isolate overflow-hidden bg-white">
       <svg
         className="absolute inset-0 -z-10 h-full w-full stroke-green-500/30 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
         aria-hidden="true"
@@ -63,14 +63,14 @@ export function Hero() {
           </linearGradient>
         </defs>
       </svg>
-      <div className="px-6 pt-10 pb-24 mx-auto max-w-7xl sm:pb-32 lg:flex lg:px-8 lg:py-40">
-        <div className="flex-shrink-0 max-w-2xl mx-auto lg:mx-0 lg:max-w-xl lg:pt-8">
-          <div className="mt-0 text-3xl font-medium tracking-tight font-display text-slate-900 sm:mt-6 sm:text-4xl lg:mt-24">
-            <span className="hidden block text-2xl font-normal sm:block lg:text-3xl">
-              Seattle Birth Doulas
+      <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
+        <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
+          <div className="mt-0 font-display text-3xl font-medium tracking-tight text-slate-900 sm:mt-6 sm:text-4xl lg:mt-24">
+            <span className="block hidden text-2xl font-normal sm:block lg:text-3xl">
+              NEW SITE
             </span>
             <h1>
-              <span className="relative whitespace-wrap text-amber-700 sm:whitespace-nowrap">
+              <span className="whitespace-wrap relative text-amber-700 sm:whitespace-nowrap">
                 <svg
                   aria-hidden="true"
                   viewBox="0 0 418 42"
@@ -83,15 +83,14 @@ export function Hero() {
                   Empowering Your Journey
                 </span>
               </span>{' '}
-              Comprehensive Doula Support in Seattle
+              The best new site for the web
             </h1>
           </div>
           <h2 className="mt-6 text-lg leading-8 tracking-tight text-slate-700 lg:text-xl">
-            Birth and Postpartum Doulas to guide you and your family through
-            pregnancy, birth, and beyond with compassionate care, expertise, and
-            experience.
+            Write something here about the site and what it does and how it can
+            help you and your business
           </h2>
-          <div className="flex items-center mt-10 gap-x-6">
+          <div className="mt-10 flex items-center gap-x-6">
             <Button
               href="/birth-doulas"
               variant="solid"
@@ -118,7 +117,7 @@ export function Hero() {
             </NavLink>
           </div>
         </div>
-        <div className="flex max-w-2xl mx-auto mt-16 sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
+        <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
           <div className="max-w-3xl flex-none overflow-hidden rounded-md bg-[#c7cddd] sm:max-w-5xl lg:max-w-none">
             <Image
               src={Baby}

@@ -62,10 +62,10 @@ export function Header({ birthDoulas }) {
 
             <div className="-mt-6 ml-4">
               <p className="translate-y-2 text-xl font-semibold tracking-tighter text-amber-700 sm:text-xl">
-                Seattle
+                Best
               </p>
               <p className="font-display text-2xl font-bold text-slate-700 sm:text-3xl">
-                Birth&nbsp;Doulas
+                New&nbsp;Site
               </p>
             </div>
           </Link>
