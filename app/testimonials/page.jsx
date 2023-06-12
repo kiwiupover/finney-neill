@@ -3,9 +3,10 @@ import { shuffleArray } from '@/utils/shuffle-array'
 import { Testimonials } from '@/components/Testimonials'
 import { tableByID, minifyItems } from '@/utils/airtable'
 
+import { REVIEW_TABLE_ID, BASE_URL } from '@/utils/const'
+
 const getProps = async () => {
-  const reviewTableId = 'tblkbKKu2L0uadRsw'
-  const reviewTable = tableByID(reviewTableId)
+  const reviewTable = tableByID(REVIEW_TABLE_ID)
 
   const reviewRecords = await reviewTable
     .select({ view: 'reviews' })
@@ -36,13 +37,13 @@ export async function generateMetadata() {
     title,
     description,
     alternates: {
-      canonical: `https://www.seattlebirthdoulas.com/testimonials`,
+      canonical: `${BASE_URL}/testimonials`,
     },
     openGraph: {
       title,
       description,
       type: 'website',
-      url: `https://www.seattlebirthdoulas.com/testimonials`,
+      url: `${BASE_URL}/testimonials`,
       images: [
         {
           url: ImageCropUrl({
@@ -92,7 +93,7 @@ export default async function TestimonialsPage() {
           fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)"
         />
       </svg>
-      <div className="absolute top-0 right-0 -ml-24 overflow-hidden left-1/2 -z-10 transform-gpu blur-3xl lg:ml-24 xl:ml-48">
+      <div className="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48">
         <svg
           viewBox="0 0 801 1036"
           aria-hidden="true"
