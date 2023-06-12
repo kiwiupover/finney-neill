@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /_next/
+Disallow: /api/
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# Host
+Host: https://www.seattlebirthdoulas.com
+
+# Sitemaps
+Sitemap: https://www.seattlebirthdoulas.com/sitemap.xml

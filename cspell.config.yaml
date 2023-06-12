@@ -1,0 +1,14 @@
+version: "0.2"
+ignorePaths: []
+dictionaryDefinitions: []
+dictionaries: []
+words:
+  - airtable
+  - CLOUDIANRY
+  - cloudinary
+  - clsx
+  - doula
+  - doulas
+  - nextjs
+ignoreWords: []
+import: []
