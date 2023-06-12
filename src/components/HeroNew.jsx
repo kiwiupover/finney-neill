@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Button } from '@/components/Button'
 import { NavLink } from '@/components/NavLink'
 
-import Baby from '@/images/babies/baby-hat.jpg'
+import Mountains from '@/images/babies/mountains.jpg'
 
 import { track } from '@amplitude/analytics-browser'
 
@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <div className="relative isolate overflow-hidden bg-white">
       <svg
-        className="absolute inset-0 -z-10 h-full w-full stroke-green-500/30 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+        className="absolute inset-0 -z-10 h-full w-full stroke-sky-500/30 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
         aria-hidden="true"
       >
         <defs>
@@ -26,7 +26,7 @@ export function Hero() {
             <path d="M.5 200V.5H200" fill="none" />
           </pattern>
         </defs>
-        <svg x="50%" y={-1} className="overflow-visible fill-green-400/10">
+        <svg x="50%" y={-1} className="overflow-visible fill-sky-400/10">
           <path
             d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
             strokeWidth={0}
@@ -58,8 +58,8 @@ export function Hero() {
             y2="638.714"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#66e546" />
-            <stop offset={1} stopColor="#99ff80" />
+            <stop stopColor="#38bdf8" />
+            <stop offset={1} stopColor="#bae6fd" />
           </linearGradient>
         </defs>
       </svg>
@@ -120,7 +120,7 @@ export function Hero() {
         <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
           <div className="max-w-3xl flex-none overflow-hidden rounded-md bg-[#c7cddd] sm:max-w-5xl lg:max-w-none">
             <Image
-              src={Baby}
+              src={Mountains}
               alt="Family in bed with their newborn baby"
               width={1600}
               height={1191}
