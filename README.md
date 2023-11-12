@@ -20,6 +20,16 @@ Finally, open [http://localhost:3000](http://localhost:3000) in your browser to 
 
 ## Customizing
 
+You will need an airtable workspace for this template.
+
+Then rename the `.envrc-example` file to `.envrc` then add the airtable credentials
+
+```bash
+export AIRTABLE_API_TOKEN=key0Z1Z1Z1Z1Z1Z1Z
+export AIRTABLE_BASE_ID=app0Z1Z1Z1Z1Z1Z1Z
+export AIRTABLE_TABLE_ID=tbl0Z1Z1Z1Z1Z1Z1Z
+```
+
 ## License
 
 This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
