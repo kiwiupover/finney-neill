@@ -28,6 +28,10 @@ Then rename the `.envrc-example` file to `.envrc` then add the airtable credenti
 export AIRTABLE_API_TOKEN=key0Z1Z1Z1Z1Z1Z1Z
 export AIRTABLE_BASE_ID=app0Z1Z1Z1Z1Z1Z1Z
 export AIRTABLE_TABLE_ID=tbl0Z1Z1Z1Z1Z1Z1Z
+
+export CLOUDIANRY_CLOUD_NAME="eeeeee"
+export CLOUDIANRY_API_KEY="4444444"
+export CLOUDIANRY_API_SECRET="eeeeeeee"
 ```
 
 ## License
