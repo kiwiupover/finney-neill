@@ -22,7 +22,7 @@ Finally, open [http://localhost:3000](http://localhost:3000) in your browser to 
 
 You will need an airtable workspace for this template.
 
-Then rename the `.envrc-example` file to `.envrc` then add the airtable credentials
+Then rename the `.envrc-example` file to `.envrc` then add the airtable and cloudianry credentials
 
 ```bash
 export AIRTABLE_API_TOKEN=key0Z1Z1Z1Z1Z1Z1Z
