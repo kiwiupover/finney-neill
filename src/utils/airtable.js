@@ -1,15 +1,28 @@
 import Airtable from 'airtable'
 import { markdownParse } from '@/utils/markdown'
 
-const base = new Airtable({ apiKey: process.env.AIRTABLE_API_TOKEN }).base(
-  process.env.AIRTABLE_BASE_ID
-)
-
-export function tableByID(tableID) {
-  return base(tableID)
+let base;
+try {
+  base = new Airtable({ apiKey: process.env.AIRTABLE_API_TOKEN }).base(
+    process.env.AIRTABLE_BASE_ID
+  )
+} catch (error) {
+  console.log({ error })
 }
 
-const table = base(process.env.AIRTABLE_TABLE_ID)
+console.log({ base });
+
+export function tableByID(tableID) {
+  try {
+    return base(tableID)
+  } catch (error) {
+    console.error({ error, tableID });
+  }
+}
+
+const table = base(process.env.AIRTABLE_TABLE_ID);
+
+console.log({ table });
 
 export function minifyItems(records) {
   return records.map((record) => getMinifiedItem(record))

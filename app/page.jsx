@@ -74,29 +74,29 @@ export function generateMetadata() {
 }
 
 export default async function Page() {
-  const {
-    reviews,
-    faqs,
-    homePageContent,
-    howWeWorkContent,
-    founderContent,
-    articles,
-  } = await getProps()
+  // const {
+  //   reviews,
+  //   faqs,
+  //   homePageContent,
+  //   howWeWorkContent,
+  //   founderContent,
+  //   articles,
+  // } = await getProps()
 
   return (
     <>
       <div className="relative">
         <main>
           <Hero />
-          <HowWeWork content={howWeWorkContent} />
+          {/* <HowWeWork content={howWeWorkContent} />
           <HomePageContentSection pageContent={homePageContent} />
           <CallToAction />
           <Founder pageContent={founderContent} />
           <Articles articles={articles} homepage={true} />
           <Testimonials reviews={reviews} homepage={true} />
-          <Faqs faqs={faqs} />
+          <Faqs faqs={faqs} /> */}
         </main>
-        <LocalBusiness />
+        {/* <LocalBusiness /> */}
       </div>
     </>
   )

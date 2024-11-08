@@ -74,7 +74,7 @@ export default async function RootLayout({ children }) {
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-        <Analytics />
+        {/* <Analytics />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"
@@ -90,7 +90,7 @@ export default async function RootLayout({ children }) {
         <meta
           name="ahrefs-site-verification"
           content="297d44a8fea016f35a2b3fa8231ff0bbf0de4383514effd561c86d3297e93b0e"
-        />
+        /> */}
       </head>
       <body
         className={clsx(inter.className, bitter.className, 'vsc-initialized')}
